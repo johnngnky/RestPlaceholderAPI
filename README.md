@@ -1,3 +1,7 @@
+# RPAPI FORK 
+This fork removed the need for a token. It will still be a config option but it will do nothing. 
+
+
 ## What Is RestPlaceholderAPI?
 RestPlaceholderAPI (RestPAPI) is a small lightweight plugin, that allows you to easily parse placeholders from an external application, like a Discord bot, or Forums.
 
