@@ -22,12 +22,20 @@ repositories {
     maven { url = 'https://repo.extendedclip.com/content/repositories/placeholderapi/' }
 }
 
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
     compileOnly 'me.clip:placeholderapi:2.10.9'
     compileOnly 'com.sparkjava:spark-core:2.9.3'
     compileOnly 'org.bstats:bstats-bukkit:2.2.1'
     implementation 'com.heretere.hdl:hdl-spigot:1.5.1'
+    implementation 'com.github.johnngnky:RestPlaceholderAPI:-SNAPSHOT'
 }
 processResources {
     from(sourceSets.main.resources.srcDirs) {
